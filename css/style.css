@@ -1,7 +1,60 @@
+:root {
+  --blue-violet: #8e46fa;
+  --night: #121212ff;
+  --night-2: #0e0e10ff;
+  --platinum: #e6e8e6ff;
+}
+
 *,
 *::after,
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: inherit; 
+  box-sizing: inherit;
+}
+
+body {
+  background-color: var(--night);
+  font-family: "Raleway", sans-serif;
+}
+
+.header {
+  display: flex;
+  color: var(--platinum);
+  align-items: center;
+  justify-content: space-between;
+  padding: 32px;
+  max-width: 75%;
+  margin: auto;
+}
+
+.header__name {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.header__name--emoji {
+  font-size: 22px;
+}
+
+.header__name--my-name {
+  font-weight: 700;
+}
+
+.header__navbar {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+}
+
+.header__navbar__list__link,
+.header__navbar__list__link:visited {
+  text-decoration: none;
+  color: var(--platinum);
+  transition: all .3s;
+}
+
+.header__navbar__list__link:hover {
+  color: var(--blue-violet);
 }
