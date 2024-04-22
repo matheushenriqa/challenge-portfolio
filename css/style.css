@@ -3,34 +3,5 @@
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: inherit; }
-
-html {
-  font-size: 62.5%; }
-
-body {
-  box-sizing: border-box;
-  background-color: #1d1b1b; }
-
-.header {
-  height: 35vh;
-  margin-top: 3rem;
-  border: 1px solid orangered; }
-  .header__photo-box {
-    position: relative;
-    width: 10.7rem;
-    height: 10.7rem;
-    margin: 0 auto;
-    border-radius: 50%;
-    background-image: linear-gradient(90deg, #ebf4f5 0%, #b3c5df 100%); }
-  .header__photo {
-    border-radius: 50%;
-    position: absolute;
-    height: 10rem;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); }
-  .header__text-box {
-    color: #ebf4f5;
-    text-align: center;
-    margin: 2.5rem; }
+  box-sizing: inherit; 
+}
