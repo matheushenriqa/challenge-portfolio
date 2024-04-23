@@ -13,9 +13,25 @@
   box-sizing: inherit;
 }
 
+.purple {
+  color: var(--blue-violet);
+}
+
 body {
   background-color: var(--night);
   font-family: "Raleway", sans-serif;
+  color: var(--platinum);
+}
+
+/* HEADER */
+
+.center-container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  max-width: 80%;
+  margin: auto;
+
 }
 
 .header {
@@ -23,9 +39,7 @@ body {
   color: var(--platinum);
   align-items: center;
   justify-content: space-between;
-  padding: 32px;
-  max-width: 75%;
-  margin: auto;
+  padding: 32px 0;
 }
 
 .header__name {
@@ -42,19 +56,69 @@ body {
   font-weight: 700;
 }
 
-.header__navbar {
+.header__navbar__list {
   display: flex;
   gap: 32px;
   list-style: none;
 }
 
-.header__navbar__list__link,
-.header__navbar__list__link:visited {
+.header__navbar__list--item__link,
+.header__navbar__list--item__link:visited {
   text-decoration: none;
   color: var(--platinum);
   transition: all .3s;
 }
 
-.header__navbar__list__link:hover {
+.header__navbar__list--item__link:hover {
+  color: var(--blue-violet);
+}
+
+/* APRESENTAÇÃO */
+
+.presentation {
+  display: flex;
+  align-items: center;
+}
+
+.presentation__text {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.presentation__image {
+  width: 368px;
+  border-radius: 50%;
+}
+
+.presentation__text__main-text {
+  font-weight: 700;
+  font-size: 52px;
+}
+
+.presentation__text__sub-text {
+  font-weight: 300;
+  font-size: 22px;
+}
+
+.presentation__text__social {
+  display: flex;
+  list-style: none;
+  gap: 32px;
+}
+
+.presentation__text__social__list {
+  transition: transform .5s;
+}
+
+.presentation__text__social__list:hover {
+  transform: translateY(-5px);
+}
+
+.presentation__text__social__list__link,
+.presentation__text__social__list__link:visited {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
   color: var(--blue-violet);
 }
