@@ -13,13 +13,31 @@
   box-sizing: inherit;
 }
 
-.purple {
-  color: var(--blue-violet);
+.background-gray {
+  background-color: var(--night-2);
+  width: 100%;
+  max-width: 100%;
+}
+
+.center-container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  max-width: 80%;
+  margin: auto;
 }
 
 .center-div {
   max-width: 80%;
   margin: auto;
+}
+
+.purple {
+  color: var(--blue-violet);
+}
+
+.section-title {
+  font-size: 32px;
 }
 
 body {
@@ -37,14 +55,6 @@ body > * {
 }
 
 /* HEADER */
-
-.center-container {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-  max-width: 80%;
-  margin: auto;
-}
 
 .header {
   width: 80%;
@@ -140,9 +150,6 @@ body > * {
 /* ABOUT ME */
 
 .about-me {
-  background-color: var(--night-2);
-  width: 100%;
-  max-width: 100%;
   padding: 50px 0;
 }
 
@@ -153,7 +160,6 @@ body > * {
 }
 
 .about-me__div__title {
-  font-size: 32px;
   width: 80%;
 }
 
@@ -176,10 +182,6 @@ body > * {
   display: flex;
   flex-direction: column;
   gap: 32px;
-}
-
-.skills_hobbies--div-title {
-  font-size: 32px;
 }
 
 .skills_hobbies--div-cards {
@@ -222,3 +224,46 @@ ion-icon {
   color: var(--blue-violet);
 }
 
+/* FORMAÇÃO ACADÊMICA */
+
+.academic-education {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.academic-education--div {
+  display: flex;
+  flex-direction: row;
+  margin-top: 32px;
+}
+
+.academic-education--div__cards--card {
+  display: flex;
+  flex-direction: column;
+  width: 368px;
+  gap: 5px;
+}
+
+.academic-education--div__cards--card-title,
+.academic-education--div__cards--card-subtitle {
+  align-self: flex-start;
+}
+
+
+.academic-education--div__cards--card-image {
+  width: 368px;
+  height: 286px;
+  align-self: flex-start;
+  border-radius: 10px;
+}
+
+.academic-education--div__cards--card-title {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.academic-education--div__cards--card-subtitle {
+  font-size: 16px;
+  font-weight: 500;
+  color: #bdbbbd;
+}
