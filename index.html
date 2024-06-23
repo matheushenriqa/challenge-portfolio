@@ -11,127 +11,190 @@
       <link rel="stylesheet" href="css/style.css">
       <title>Matheus Henrique | Portfólio</title>
    </head>
-   <body>
    
+   <body>
+      
       <!-- HEADER -->
 
       <header class="header">
-         <div class="header__name">
-            <span class="header__name--emoji">👽</span>
-            <p class="header__name--my-name">Matheus Henrique</p>
+         <div class="header-name">
+            <span class="emoji">👽</span>
+            <p class="my-name">Matheus Henrique</p>
          </div>
-         <nav class="header__navbar">
-            <ul class="header__navbar__list">
-               <li class="header__navbar__list--item"><a class="header__navbar__list--item__link" href="">Sobre mim</a></li>
-               <li class="header__navbar__list--item"><a class="header__navbar__list--item__link" href="">Skills</a></li>
-               <li class="header__navbar__list--item"><a class="header__navbar__list--item__link" href="">Hobbies</a></li>
-               <li class="header__navbar__list--item"><a class="header__navbar__list--item__link" href="">Formação</a></li>
-               <li class="header__navbar__list--item"><a class="header__navbar__list--item__link" href="">Projetos</a></li>
+         <nav class="navbar">
+            <ul class="navbar-sections">
+               <li class="section"><a href="">Sobre mim</a></li>
+               <li class="section"><a href="">Skills</a></li>
+               <li class="section"><a href="">Hobbies</a></li>
+               <li class="section"><a href="">Formação</a></li>
+               <li class="section"><a href="">Projetos</a></li>
             </ul>
          </nav>
       </header>
 
-      <!-- APRESENTAÇÃO -->
+      <main>
 
-      <section class="presentation">
-         <div class="presentation__text">
-            <h1 class="presentation__text__main-text">Olá meu nome é <span class="purple">Matheus</span> e sou um desenvolvedor Front-End</h1>
-            <h2 class="presentation__text__sub-text">Eu construo páginas web e atualmente estou participando do projeto Oracle ONE na Alura.</h2>
-            <ul class="presentation__text__social">
-               <li class="presentation__text__social__list"><a href="" class="presentation__text__social__list__link">Github<span><img src="./img/arrow-icon.svg" alt=""></span></a></li>
-               <li class="presentation__text__social__list"><a href="" class="presentation__text__social__list__link">Linkedin<span><img src="./img/arrow-icon.svg" alt=""></span></a></li>
-               <li class="presentation__text__social__list"><a href="" class="presentation__text__social__list__link">Currículo<span><img src="./img/arrow-icon.svg" alt=""></span></a></li>
-            </ul>
-         </div>
-         <img class="presentation__image" src="./img/photo.jpg" alt="">
-      </section>
+         <!-- APRESENTAÇÃO -->
 
-      <!-- SOBRE MIM -->
-
-      <section class="about-me background-gray">
-         <div class="about-me__div center-div">
-            <h2 class="about-me__div__title">Sobre mim</h2>
-            <p class="about-me__div__text">Sou o Matheus um programador PCD apaixonado por tecnologia e computadores desde a infância. </p>
-            <p class="about-me__div__text">Meu maior objetivo é criar sites e aplicativos que sejam intuitivos, acessíveis e bonitos. Acredito muito que a tecnologia pode mudar' vidas assim como muda a minha, e estou disposto em fazer a minha parte para que ela mude cada vez mais histórias.</p>
-         </div>
-      </section>
-
-      <!-- SKILLS E HOBBIES -->
-
-      <section class="skills_hobbies">
-         <div class="skills_hobbies--div">
-            <h3 class="skills_hobbies--div-title section-title">Skills</h3>
-            <div class="skills_hobbies--div-cards">
-               <div class="card">
-                  <ion-icon name="logo-html5"></ion-icon>
-                  <p class="card--text">Html 5</p>
+         <section class="presentation">
+            <div class="presentation-wrapper">
+               <div class="text-wrapper">
+                  <h1 class="title">Olá meu nome é <span>Matheus</span> e sou um desenvolvedor Front-End</h1>
+                  <h2 class="sub-title">Eu construo páginas web e atualmente estou participando do projeto Oracle ONE na Alura.</h2>
                </div>
-               <div class="card">
-                  <ion-icon name="logo-css3"></ion-icon>
-                  <p class="card--text">CSS</p>
-               </div>
-               <div class="card">
-                  <ion-icon name="logo-javascript"></ion-icon>
-                  <p class="card--text">Javascript</p>
-               </div>
-               <div class="card">
-                  <ion-icon name="git-branch-outline"></ion-icon>
-                  <p class="card--text">Git</p>
+               
+               <ul class="social-list">
+                  <li class="item">
+                     <a href="">Github 
+                        <img class="arrow-img" src="./img/arrow-icon.svg" alt="Icone de seta">
+                     </a>
+                  </li>
+                  <li class="item">
+                     <a href="">Linkedin 
+                        <img class="arrow-img" src="./img/arrow-icon.svg" alt="Icone de seta">
+                     </a>
+                  </li>
+                  <li class="item">
+                     <a href="">Currículo 
+                        <img class="arrow-img" src="./img/arrow-icon.svg" alt="Icone de seta">
+                     </a>
+                  </li>
+               </ul>
+            </div>
+
+            <img class="my-photo" src="./img/photo.jpg" alt="">
+         </section>
+
+         <!-- SOBRE MIM -->
+
+         <section class="about-me">
+            <h2 class="title">Sobre mim</h2>
+            <p class="text">Sou o Matheus um programador PCD apaixonado por tecnologia e computadores desde a infância.<br><br>Meu maior objetivo é criar sites e aplicativos que sejam intuitivos, acessíveis e bonitos. Acredito muito que a tecnologia pode mudar' vidas assim como muda a minha, e estou disposto em fazer a minha parte para que ela mude cada vez mais histórias.</p>
+         </section>
+
+         <!-- SKILLS E HOBBIES -->
+
+         <section class="skills_hobbies">
+            <div class="skills-wrapper">
+               <h3 class="section-title">Skills</h3>
+               <div class="cards">
+                  <div class="card">
+                     <ion-icon name="logo-html5"></ion-icon>
+                     <p class="text">Html 5</p>
+                  </div>
+                  <div class="card">
+                     <ion-icon name="logo-css3"></ion-icon>
+                     <p class="text">CSS</p>
+                  </div>
+                  <div class="card">
+                     <ion-icon name="logo-javascript"></ion-icon>
+                     <p class="text">Javascript</p>
+                  </div>
+                  <div class="card">
+                     <ion-icon name="git-branch-outline"></ion-icon>
+                     <p class="text">Git</p>
+                  </div>
                </div>
             </div>
-         </div>
+            
+            <div class="hobbies-wrapper">
+               <h3 class="section-title">Hobbies</h3>
 
-         <div class="skills_hobbies--div">
-            <h3 class="skills_hobbies--div-title section-title">Hobbies</h3>
-            <div class="skills_hobbies--div-cards">
-               <div class="card">
-                  <ion-icon name="headset"></ion-icon>
-                  <p class="card--text">Ouvir música</p>
-               </div>
-               <div class="card">
-                  <ion-icon name="tv-outline"></ion-icon>
-                  <p class="card--text">Assistir séries</p>
-               </div>
-               <div class="card">
-                  <ion-icon name="game-controller-outline"></ion-icon>
-                  <p class="card--text">Jogar videogames</p>
-               </div>
-               <div class="card">
-                  <ion-icon name="brush-outline"></ion-icon>
-                  <p class="card--text">Desenhar</p>
+               <div class="cards">
+                  <div class="card">
+                     <ion-icon name="headset"></ion-icon>
+                     <p class="text">Ouvir música</p>
+                  </div>
+                  <div class="card">
+                     <ion-icon name="tv-outline"></ion-icon>
+                     <p class="text">Assistir séries</p>
+                  </div>
+                  <div class="card">
+                     <ion-icon name="game-controller-outline"></ion-icon>
+                     <p class="text">Jogar videogames</p>
+                  </div>
+                  <div class="card">
+                     <ion-icon name="brush-outline"></ion-icon>
+                     <p class="text">Desenhar</p>
+                  </div>
                </div>
             </div>
-         </div>
-      </section>
+         </section>
 
-      <!-- FORMAÇÃO ACADÊMICA -->
+         <!-- FORMAÇÃO ACADÊMICA -->
 
-      <section class="academic-education background-gray">
-         <h3 class="academic-education--div--title section-title">Formação acadêmica</h3>
-         <div class="academic-education--div center-container">
-            <div class="academic-education--div__cards">
-               <div class="academic-education--div__cards--card">
-                  <img class="academic-education--div__cards--card-image" src="/img/rocketseat-logo.png" alt="">
-                  <p class="academic-education--div__cards--card-title">Discover</p>
-                  <p class="academic-education--div__cards--card-subtitle">2024 - Rocketseat</p>
+         <section class="academic-education">
+            <h3 class="section-title">Formação acadêmica</h3>
+            <div class="cards">
+               <div class="card">
+                  <img class="card-image" src="/img/rocketseat-logo.png" alt="">
+                  <p class="card-title">Discover</p>
+                  <p class="card-subtitle">2024 - Rocketseat</p>
+               </div>
+               <div class="card">
+                  <img class="card-image" src="/img/alura-logo.png" alt="">
+                  <p class="card-title">Desenvolvimento pessoal</p>
+                  <p class="card-subtitle">2024 - Alura</p>
+               </div>
+               <div class="card">
+                  <img class="card-image" src="/img/alura-logo.png" alt="">
+                  <p class="card-title">Formação Front-End</p>
+                  <p class="card-subtitle">Em andamento - Alura</p>
                </div>
             </div>
-            <div class="academic-education--div__cards">
-               <div class="academic-education--div__cards--card">
-                  <img class="academic-education--div__cards--card-image" src="/img/alura-logo.png" alt="">
-                  <p class="academic-education--div__cards--card-title">Formação Desenvolvimento Pessoal</p>
-                  <p class="academic-education--div__cards--card-subtitle">2024 - Alura</p>
+         </section>
+
+         <!-- EXPERIÊNCIA PROFISSIONAL -->
+
+         <section class="professional-experience">
+            <h3 class="section-title">Experiência profissional</h3>
+            <div class="projects">
+               <div class="project">
+                  <img src="./img/decodificador.png" alt="Imagem do projeto Decodificador de texto">
+                  <div class="project-info">
+                     <h4>Decodificador de texto</h4>
+                     <h5>Challenge Alura Codificador</h5>
+                     <div class="buttons">
+                        <a class="repo-link" href="">Repositório</a>
+                        <a class="demo-link" href="">Ver demo</a>
+                     </div>
+                  </div>
                </div>
             </div>
-            <div class="academic-education--div__cards">
-               <div class="academic-education--div__cards--card">
-                  <img class="academic-education--div__cards--card-image" src="/img/alura-logo.png" alt="">
-                  <p class="academic-education--div__cards--card-title">Formação Front-End</p>
-                  <p class="academic-education--div__cards--card-subtitle">Em andamento - Alura</p>
+         </section>
+
+         <!-- CONTATO -->
+
+         <section class="contact">
+            <h3 class="section-title">Contato</h3>
+            <p>
+               Quer entrar em contato comigo?<br/>
+               Preencha o formulário abaixo e entrarei em contato o mais rápido possível.
+            </p>
+            <form action="">
+               <div class="input-group input-nome">
+                  <label for="name">Nome</label>
+                  <input type="text" name="name" id="name">
                </div>
-            </div>
-         </div>
-      </section>
+               <div class="input-group input-nome">
+                  <label for="name">Email</label>
+                  <input type="text" name="name" id="name">
+               </div>
+               <div class="input-group input-nome">
+                  <label for="name">Assunto</label>
+                  <input type="text" name="name" id="name">
+               </div>
+               <div class="input-group input-nome">
+                  <label for="name">Assunto</label>
+                  <textarea type="text" name="name" id="name"></textarea>
+               </div>
+
+               <button>Enviar mensagem</button>
+            </form>
+         </section>
+         <footer>Desenvolvido por Matheus Henrique<br>2023</footer>
+      </main>
+
 
       <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
       <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
